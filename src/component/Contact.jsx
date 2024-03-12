@@ -78,7 +78,7 @@ if(data){
 
 
                         <div className="pt-20 pb-[154px] xl:pb-[0px] xl:pt-24 text-center">
-                        <button className={`uppercase btn btn-outline my-5 px-20 rounded-full text-[17px]  border-[${primaryColor}] text-white font-medium hover:bg-gradient-to-r  from-[#4600A0] to-[#9747FF]`}>Submit</button>
+                        <button className={`uppercase btn btn-outline my-5 px-20 rounded-full text-[17px]  border-[${primaryColor}] hover:border-none text-white font-medium hover:bg-gradient-to-r  from-[#4600A0] to-[#9747FF]`}>Submit</button>
                         </div>
                         
                     </form>

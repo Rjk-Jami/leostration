@@ -30,7 +30,7 @@ function App() {
 
   return (
     <>
-      <div className="w-full overflow-hidden bg-black relative">
+      <div className=" w-full overflow-hidden bg-black relative">
         {/* pc effect */}
         <div className="ms-6 xl:ms-12   ">
           <div className="">
@@ -42,10 +42,14 @@ function App() {
           <div className="">
             <CgMenuMotion className={`fixed text-3xl text-white xl:right-[107px] right-[40px] z-30 top-[50px]  xl:top-[80px] hover:text-[${primaryColor}]`} />
           </div>
-          <div className="absolute hidden md:block left-[1148px] -top-[747px] w-[1516px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full"></div>
-          <div className="absolute hidden md:block left-[1544px] top-[1471px] w-[1647px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full"></div>
-          <div className="absolute hidden md:block left-[1504px] top-[3921px] w-[1616px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full"></div>
-          <div className="absolute hidden md:block left-[1502px] top-[6150px] w-[1516px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full"></div>
+          <div className="absolute hidden xl:block left-[1148px] -top-[747px] w-[1516px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full"></div>
+          <div className="absolute hidden xl:block left-[1544px] top-[1471px] w-[1647px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full"></div>
+          <div className="absolute hidden xl:block left-[1504px] top-[3921px] w-[1616px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full"></div>
+          <div className="absolute hidden xl:block left-[1502px] top-[6150px] w-[1516px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full"></div>
+           {/* md */}
+          <div className="absolute hidden md:block xl:hidden left-[448px] -top-[1085px] w-[1516px] h-[1516px] bg-[#9747FF] blur-[750px]  rounded-full"></div>
+          <div className="absolute hidden md:block xl:hidden left-[544px] top-[1271px] w-[1647px] h-[1016px] bg-[#9747FF] blur-[1750px]  rounded-full"></div>
+          <div className="absolute hidden md:block xl:hidden left-[604px] top-[3021px] w-[1616px] h-[1516px] bg-[#9747FF] blur-[1750px]  rounded-full"></div>
         </div>
         {/* mobile effect */}
         <div className=" absolute block md:hidden left-24 -top-[1358px] w-[1140px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full "></div>
@@ -53,7 +57,7 @@ function App() {
         <div className=" absolute block md:hidden -left-64 top-[1950px] w-[342px] h-[402px] bg-[#9747FF] blur-[550px]  md:blur-[1250px] rounded-full "></div>
         <div className=" absolute block md:hidden left-60 top-[2780px] w-[342px] h-[402px] bg-[#9747FF] blur-[550px]  md:blur-[1250px] rounded-full "></div>
 
-        <div className="fixed hidden  xl:flex right-0 mt-[281px] me-[92px] gap-[41px] px-[15px] py-[40px] z-50 text-white pt-[40px] w-[57px]  border rounded-[36px] border-[#E3F2FD] flex-col">
+        <div className="fixed hidden   xl:flex xl:items-center right-0 mt-[281px] me-[92px] gap-[41px]  py-[40px] z-50 text-white pt-[40px] w-[57px]   border rounded-[36px] border-[#E3F2FD] flex-col">
           <Link
             to="introduce"
             spy={true}
@@ -62,7 +66,7 @@ function App() {
             className={active === "introduce" ? `text-[${primaryColor}]` : ""}
             onClick={() => setActive("introduce")}
           >
-            <LuHome className={`w-[24px] h-[24px] hover:text-[${primaryColor}]`} />
+            <LuHome className={`w-[18px] h-[20.02px] hover:text-[${primaryColor}]`} />
           </Link>
           <Link
             to="about"
@@ -72,7 +76,7 @@ function App() {
             className={active === "about" ? `text-[${primaryColor}]` : ""}
             onClick={() => setActive("about")}
           >
-            <LuUser2 className="w-[24px] h-[24px] hover:text-[#9747FF]" />
+            <LuUser2 className="w-[18px] h-[20.02px] hover:text-[#9747FF]" />
           </Link>
           <Link
             to="experience"
@@ -82,7 +86,7 @@ function App() {
             className={active === "experience" ? `text-[${primaryColor}]` : ""}
             onClick={() => setActive("experience")}
           >
-            <PiSuitcaseSimpleBold className="w-[24px] h-[24px] hover:text-[#9747FF]" />
+            <PiSuitcaseSimpleBold className="w-[18px] h-[20.02px] hover:text-[#9747FF]" />
           </Link>
           <Link
             to="Education"
@@ -92,7 +96,7 @@ function App() {
             className={active === "Education" ? `text-[${primaryColor}]` : ""}
             onClick={() => setActive("Education")}
           >
-            <LuGraduationCap className="w-[24px] h-[24px] hover:text-[#9747FF]" />
+            <LuGraduationCap className="w-[18px] h-[20.02px] hover:text-[#9747FF]" />
           </Link>
           <Link
             to="Education2"
@@ -102,7 +106,7 @@ function App() {
             className={active === "Education2" ? `text-[${primaryColor}]` : ""}
             onClick={() => setActive("Education2")}
           >
-            <TbAward className="w-[24px] h-[24px] hover:text-[#9747FF]" />
+            <TbAward className="w-[18px] h-[20.02px] hover:text-[#9747FF]" />
           </Link>
           <Link
             to="Contact"
@@ -112,7 +116,7 @@ function App() {
             className={active === "Contact" ? `text-[${primaryColor}]` : ""}
             onClick={() => setActive("Contact")}
           >
-            <FaRegEnvelope className="w-[24px] h-[24px] hover:text-[#9747FF]" />
+            <FaRegEnvelope className="w-[18px] h-[20.02px] hover:text-[#9747FF]" />
           </Link>
         </div>
 
@@ -120,7 +124,7 @@ function App() {
 
 
         {/* main content */}
-        <div className="flex flex-col xl:flex-row  xl:gap-16 relative" >
+        <div className="flex flex-col xl:flex-row  xl:gap-16 relative max-w-[360px] md:max-w-full mx-auto" >
           {/* fixed content */}
           <div className="xl:w-4/12 2xl:w-4/12 ">
             <div className="overflow-hidden mx-auto xl:ms-[100px] 2xl:ms-[189px] mt-[120px] xl:mt-[150px] 2xl:mt-[212px] xl:fixed w-[224px] h-[397px] xl:w-[328px] xl:h-[580px]  rounded-[36px] border border-opacity-40 border-[#9747FF] ">
@@ -158,7 +162,7 @@ function App() {
             </div>
           </div>
           {/* blog content */}
-          <div className="z-50 text-white w-8/12 mx-auto xl:mx-0 lg: 2xl:w-5/12  overflow-x-auto scrollbar">
+          <div className="z-40 text-white w-8/12 mx-auto xl:mx-0 lg: 2xl:w-5/12  overflow-x-auto scrollbar">
             {/* 1 */}
 
             <div id="introduce" className=" pt-[26px] xl:pt-[79px]">
