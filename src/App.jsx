@@ -8,7 +8,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FiDribbble } from "react-icons/fi";
 import { FaBehance } from "react-icons/fa";
 import { FiAtSign } from "react-icons/fi";
-import profile from "../src/assets/profile.svg"
+import profile from "../src/assets/profile.png"
 import { IoMdFlame } from "react-icons/io";
 
 import React, { useContext, useEffect, useState } from "react";
@@ -25,8 +25,47 @@ import { NavLink } from "react-router-dom";
 
 
 function App() {
-  const [active, setActive] = useState("introduce");
+  const [active, setActive] = useState("");
   const { primaryColor } = useContext(CssContext)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = [
+        "introduce",
+        "about",
+        "experience",
+        "Education",
+        "Education2",
+        "Contact"
+      ];
+
+      const currentPosition = window.pageYOffset;
+
+      for (let i = 0; i < sections.length; i++) {
+        const section = document.getElementById(sections[i]);
+        if (!section) continue; // Skip if section not found
+
+        const sectionOffset = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionBottom = sectionOffset + sectionHeight;
+
+        if (
+          currentPosition >= sectionOffset &&
+          currentPosition < sectionBottom
+        ) {
+          setActive(sections[i]);
+          break; // Exit loop once active section is found
+        }
+      }
+    };
+
+    handleScroll(); // Call to set active section on initial render
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+}, [setActive]);
 
   return (
     <>
@@ -46,16 +85,16 @@ function App() {
           <div className="absolute hidden xl:block left-[1544px] top-[1471px] w-[1647px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full"></div>
           <div className="absolute hidden xl:block left-[1504px] top-[3921px] w-[1616px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full"></div>
           <div className="absolute hidden xl:block left-[1502px] top-[6150px] w-[1516px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full"></div>
-           {/* md */}
+          {/* tab effect */}
           <div className="absolute hidden md:block xl:hidden left-[448px] -top-[1085px] w-[1516px] h-[1516px] bg-[#9747FF] blur-[750px]  rounded-full"></div>
           <div className="absolute hidden md:block xl:hidden left-[544px] top-[1271px] w-[1647px] h-[1016px] bg-[#9747FF] blur-[1750px]  rounded-full"></div>
           <div className="absolute hidden md:block xl:hidden left-[604px] top-[3021px] w-[1616px] h-[1516px] bg-[#9747FF] blur-[1750px]  rounded-full"></div>
         </div>
         {/* mobile effect */}
-        <div className=" absolute block md:hidden left-24 -top-[1358px] w-[1140px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full "></div>
-        <div className=" absolute block md:hidden left-60 top-[1180px] w-[342px] h-[402px] bg-[#9747FF]  blur-[550px]  md:blur-[1250px] rounded-full "></div>
-        <div className=" absolute block md:hidden -left-64 top-[1950px] w-[342px] h-[402px] bg-[#9747FF] blur-[550px]  md:blur-[1250px] rounded-full "></div>
-        <div className=" absolute block md:hidden left-60 top-[2780px] w-[342px] h-[402px] bg-[#9747FF] blur-[550px]  md:blur-[1250px] rounded-full "></div>
+        <div className=" absolute block md:hidden left-24 -top-[1258px] w-[1140px] h-[1516px] bg-[#9747FF] blur-[220px]  rounded-full "></div>
+        <div className=" absolute block md:hidden left-60 top-[1180px] w-[342px] h-[402px] bg-[#9747FF]  blur-[220px]   rounded-full "></div>
+        <div className=" absolute block md:hidden -left-64 top-[1950px] w-[342px] h-[402px] bg-[#9747FF] blur-[220px]   rounded-full "></div>
+        <div className=" absolute block md:hidden left-60 top-[2980px] w-[342px] h-[402px] bg-[#9747FF] blur-[220px]   rounded-full "></div>
 
         <div className="fixed hidden   xl:flex xl:items-center right-0 mt-[281px] me-[92px] gap-[41px]  py-[40px] z-50 text-white pt-[40px] w-[57px]   border rounded-[36px] border-[#E3F2FD] flex-col">
           <Link
@@ -124,7 +163,7 @@ function App() {
 
 
         {/* main content */}
-        <div className="flex flex-col xl:flex-row  xl:gap-16 relative max-w-[360px] md:max-w-full mx-auto" >
+        <div className="flex flex-col xl:flex-row  xl:gap-16 relative md:max-w-full mx-auto " >
           {/* fixed content */}
           <div className="xl:w-4/12 2xl:w-4/12 ">
             <div className="overflow-hidden mx-auto xl:ms-[100px] 2xl:ms-[189px] mt-[120px] xl:mt-[150px] 2xl:mt-[212px] xl:fixed w-[224px] h-[397px] xl:w-[328px] xl:h-[580px]  rounded-[36px] border border-opacity-40 border-[#9747FF] ">
@@ -133,9 +172,9 @@ function App() {
                 <p className="  mt-2.5 xl:mt-3 text-white text-[8px] xl:text-[16px]">Founder, Leostration</p>
 
               </div>
-
+{/*  fixed card */}
               <div className=" w-44 xl:w-64 h-44 xl:h-64 mx-auto mt-4 xl:mt-6  relative">
-                <div className="w-[85px] h-[85px] xl:w-44 xl:h-44 right-11 bg-[#9747FF] rounded-full absolute z-10 xl:-z-10   blur-2xl"></div>
+                <div className="w-[85px] top-1.5 h-[85px] xl:w-40 xl:h-40 right-[48px] xl:right-[50px] bg-[#9747FF] rounded-full absolute z-10 xl:-z-10   blur-xl xl:blur-2xl"></div>
                 <div className="w-44 h-44  xl:w-full xl:h-full  mt-1">
                   <img className=" w-full  absolute z-50" src={profile} />
                 </div>
@@ -162,7 +201,7 @@ function App() {
             </div>
           </div>
           {/* blog content */}
-          <div className="z-40 text-white w-8/12 mx-auto xl:mx-0 lg: 2xl:w-5/12  overflow-x-auto scrollbar">
+          <div className="z-40 text-white w-full mx-auto xl:mx-0 lg: 2xl:w-5/12  overflow-x-auto scrollbar">
             {/* 1 */}
 
             <div id="introduce" className=" pt-[26px] xl:pt-[79px]">
@@ -170,7 +209,7 @@ function App() {
               <Introduce></Introduce>
             </div>
             {/* 2 */}
-            <div id="about" className="  pt-[91px] xl:pt-[79px]">
+            <div id="about" className="  pt-[115px] xl:pt-[79px]">
               <About></About>
             </div>
             {/* 3 */}
@@ -183,7 +222,7 @@ function App() {
             <div id="Education2" className="hidden xl:block  pt-[64px]">
               <Education></Education>
             </div>
-            <div id="Contact" className=" pt-[140px] xl:pt-[70px] xl:pb-[79px] 2xl:pb-[0px]">
+            <div id="Contact" className=" pt-[200px] xl:pt-[70px]   xl:pb-[0] 2xl:pb-[0px] ">
               <Contact></Contact>
             </div>
 
