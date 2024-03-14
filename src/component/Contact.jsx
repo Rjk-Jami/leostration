@@ -44,24 +44,24 @@ const Contact = () => {
 
     return (
         <div className="">
-            <div id="" className="h-screen  flex flex-col items-center xl:items-start " >
+            <div id="" className="2xl:h-screen  flex flex-col items-center xl:items-start " >
                 <div className="">
                     <Badge title={'Contact'}>
                         <FaRegEnvelope />
                     </Badge>
                 </div>
-                <div className="pt-[58px] xl:pt-[20px] xl:mt-[170px] tracking-widest">
+                <div className="pt-[58px] xl:pt-[20px] xl:mt-[70px] 2xl:mt-[170px] tracking-widest">
                     <div className="flex flex-col xl:flex-row items-center xl:gap-1 2xl:gap-4">
                         <h1 className=" text-[24px] xl:text-left text-center xl:text-[52px] 2xl:text-[64px] font-light  leading-none">Let&#180;s Talk About <br className='xl:hidden block'></br></h1>
                         <p className={`text-[24px] xl:text-left text-center xl:text-[52px] 2xl:text-[64px] font-medium text-[${primaryColor}]`}>Projects</p>
                     </div>
 
 
-                    <div className="pt-[76px] xl:pt-[125px] w-full xl:w-[530px] 2xl:w-[700px] ">
+                    <div className="pt-[76px] xl:pt-[80px] 2xl:pt-[125px] w-full xl:w-[570px] 2xl:w-[700px] ">
 
                         <form onSubmit={handleSubmit(onSubmit)} className="">
 
-                            <div className="flex flex-col xl:flex-row gap-[45px] xl:gap-[71px]">
+                            <div className="flex flex-col xl:flex-row gap-[45px] xl:gap-[30px]">
                                 <input
                                     required
 
