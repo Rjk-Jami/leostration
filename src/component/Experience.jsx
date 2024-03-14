@@ -18,10 +18,10 @@ const Experience = () => {
         <p className={`text-[24px] xl:text-[40px] font-normal 
                 text-[${primaryColor}] xl:text-left text-center   `}>Leon Sarker</p>
         <div className=" pt-[67px] xl:pt-[79px] relative">
-          <div className="absolute left-1 w-0.5 mt-1 xl:h-[535px] h-[439px] bg-white"></div>
-          <div className={`absolute  w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
-          <div className={`absolute top-[259px] xl:top-[277px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
-          <div className="ps-[84px]">
+          <div className="absolute -left-7 xl:left-1 w-0.5 mt-1 xl:h-[535px] h-[439px] bg-white"></div>
+          <div className={`absolute -left-8 xl:left-0   w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
+          <div className={`absolute -left-8 xl:left-0 top-[259px] xl:top-[277px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
+          <div className="ps-[35px] xl:ps-[84px]">
             <p className='text-[12px] text-[#636363]'>2021-2023</p>
             <div className="pt-[27px] flex flex-col gap-[23px]">
               <div className="">
@@ -37,7 +37,7 @@ const Experience = () => {
 
 
           </div>
-          <div className="ps-[84px] pt-[42px] ">
+          <div className="ps-[35px] xl:ps-[84px] pt-[42px] ">
             <p className='text-[12px] text-[#636363]'>2019-2021</p>
             <div className="pt-[27px] flex flex-col gap-[23px]">
               <div className="">

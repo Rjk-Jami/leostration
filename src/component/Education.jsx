@@ -13,7 +13,7 @@ const Education = () => {
                     <LuGraduationCap />
                 </Badge>
             </div>
-            <div className="mt-[142px] ">
+            <div className="mt-[67px] ">
               <div className="flex flex-col xl:flex-row items-center xl:gap-4">
               <h1 className="text-[24px] xl:text-left text-center xl:text-[60px] font-light  leading-none">Educational<br className='xl:hidden block'></br> </h1>
                 <p className={`text-[${primaryColor}] xl:text-white xl:text-[60px] text-[32px] font-medium xl:font-light `}>Qualification</p>
@@ -23,13 +23,13 @@ const Education = () => {
 
 
                 <div className="pt-[79px] relative">
-                    <div className="absolute left-1 w-0.5 mt-1 h-[404px] bg-white"></div>
+                    <div className="absolute left-1 w-0.5 mt-1 h-[325px] xl:h-[355px] bg-white"></div>
 
 
                     <div className={`absolute  w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
-                    <div className={`absolute top-[192px] xl:top-[175px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
-                    <div className={`absolute top-[302px] xl:top-[266px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
-                    <div className={`absolute top-[413px] xl:top-[357px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
+                    <div className={`absolute top-[169px] xl:top-[175px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
+                    <div className={`absolute top-[255px] xl:top-[266px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
+                    <div className={`absolute top-[341px] xl:top-[357px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
 
 
                     <div className="ps-[70px] xl:ps-[84px]">

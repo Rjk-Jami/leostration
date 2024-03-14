@@ -73,13 +73,13 @@ function App() {
         {/* pc effect */}
         <div className="ms-6 xl:ms-12   ">
           <div className="">
-            <img src="https://i.ibb.co/8b9CzCg/image.png" className="fixed z-10 w-[50px] h-[50px] xl:w-[100px] xl:h-[100px] top-10 xl:top-11" alt="" />
+            <img src="https://i.ibb.co/8b9CzCg/image.png" className="absolute z-10 w-[50px] h-[50px] xl:w-[100px] xl:h-[100px] top-10 xl:top-11" alt="" />
 
 
 
           </div>
           <div className="">
-            <CgMenuMotion className={`fixed text-3xl text-white xl:right-[107px] right-[40px] z-30 top-[50px]  xl:top-[80px] hover:text-[${primaryColor}]`} />
+            <CgMenuMotion className={`absolute text-3xl text-white xl:right-[107px] right-[40px] z-30 top-[50px]  xl:top-[80px] hover:text-[${primaryColor}]`} />
           </div>
           <div className="absolute hidden xl:block left-[1148px] -top-[747px] w-[1516px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full"></div>
           <div className="absolute hidden xl:block left-[1544px] top-[1471px] w-[1647px] h-[1516px] bg-[#9747FF] blur-[500px] md:blur-[1250px] rounded-full"></div>
