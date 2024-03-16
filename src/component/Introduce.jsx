@@ -17,8 +17,8 @@ const Introduce = () => {
       </div>
       <div className=" 2xl:mt-[130px] xl:mt-[100px] space-y-4  xl:space-y-3">
         <p className="text-[14px]  xl:text-left text-center xl:text-[16px] xl:ms-1 ">Since 2019</p>
-        <h1 className=" text-5xl xl:text-left text-center xl:text-7xl 2xl:text-8xl font-semibold ">Hey! Nice to</h1>
-        <h1 className='2xl:pt-1 text-5xl xl:text-left text-center  xl:text-7xl 2xl:text-8xl font-semibold '>See You.</h1>
+        <h1 className=" text-4xl xl:text-left text-center xl:text-7xl 2xl:text-8xl font-semibold ">Hey! Nice to</h1>
+        <h1 className='2xl:pt-1 text-4xl xl:text-left text-center  xl:text-7xl 2xl:text-8xl font-semibold '>See You.</h1>
         <p className="xl:text-xl xl:text-left text-center  text-xs">I'm Leon Sarker, a passionate <span>GRAPHICS DESIGNER</span> from<br></br>Rajshahi, Bangladesh.</p>
         <div className="hidden xl:flex gap-[160px] 2xl:pt-4 xl:pt-1">
           <div className=" flex flex-col 2xl:gap-[33px] xl:gap-[25px]">

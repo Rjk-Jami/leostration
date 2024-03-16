@@ -23,13 +23,13 @@ const Education = () => {
 
 
                 <div className="pt-[79px] relative">
-                    <div className="absolute left-1 w-0.5 mt-1 h-[325px] xl:h-[355px] bg-white"></div>
+                    <div className="absolute left-1 w-0.5 mt-1 xl:mt-0 h-[325px] xl:h-[360px] bg-white"></div>
 
 
-                    <div className={`absolute  w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
-                    <div className={`absolute top-[169px] xl:top-[175px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
-                    <div className={`absolute top-[255px] xl:top-[266px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
-                    <div className={`absolute top-[341px] xl:top-[357px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
+                    <div className={`absolute top-[111px] xl:top-[113px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
+                    <div className={`absolute top-[197px] xl:top-[206px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
+                    <div className={`absolute top-[284px] xl:top-[300px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
+                    <div className={`absolute top-[367px] xl:top-[392px] w-3 h-3 rounded-full bg-[${primaryColor}]`}></div>
 
 
                     <div className="ps-[70px] xl:ps-[84px]">
@@ -43,7 +43,7 @@ const Education = () => {
                             </div>
                             <div className="">
                             <p className='text-[12px] text-[#636363] mb-[6px]'>2017-2019</p>
-                                <p className='text-md xl:text-xl'>Higher School Certificate (S.S.C)</p>
+                                <p className='text-md xl:text-xl'>Secondery School Certificate (S.S.C)</p>
                                 <p className={`text-[10px] xl:text-[12px] text-[${primaryColor}]`}>Puthia P,N Govt. High School, Puthia</p>
                             </div>
                             <div className="">
